@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>handphone.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+handphone.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">BelajarOOP</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">handphone {</span>
+    <span class="s0">private </span><span class="s1">String nama</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String merek</span><span class="s0">;</span>
+    <span class="s0">private int </span><span class="s1">ram</span><span class="s0">;</span>
+    <span class="s0">private int </span><span class="s1">harga</span><span class="s0">;</span>
+
+    <span class="s0">public </span><span class="s1">String getNama() {</span>
+        <span class="s0">return </span><span class="s1">nama</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setNama(String nama) {</span>
+        <span class="s0">this</span><span class="s1">.nama = nama</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getMerek() {</span>
+        <span class="s0">return </span><span class="s1">merek</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setMerek(String merek) {</span>
+        <span class="s0">this</span><span class="s1">.merek = merek</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public int </span><span class="s1">getRam() {</span>
+        <span class="s0">return </span><span class="s1">ram</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setRam(</span><span class="s0">int </span><span class="s1">ram) {</span>
+        <span class="s0">this</span><span class="s1">.ram = ram</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public int </span><span class="s1">getHarga() {</span>
+        <span class="s0">return </span><span class="s1">harga</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setHarga(</span><span class="s0">int </span><span class="s1">harga) {</span>
+        <span class="s0">this</span><span class="s1">.harga = harga</span><span class="s0">;</span>
+       <span class="s1">}</span>
+
+    <span class="s1">}</span>
+
+
+<span class="s0">class </span><span class="s1">menuhandhone{</span>
+    <span class="s0">public static void </span><span class="s1">main(String[]args){</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;</span><span class="s0">\n\t</span><span class="s2">selamat datang di toko handphone kami</span><span class="s0">\n</span><span class="s2">&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;</span><span class="s0">\t\t</span><span class="s2">Menu 1&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone handphone1=</span><span class="s0">new </span><span class="s1">handphone()</span><span class="s0">;</span>
+        <span class="s1">handphone1.setNama(</span><span class="s2">&quot;Samsung Galaxy Note 20 Ultra&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone1.setMerek(</span><span class="s2">&quot; Samsung&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone1.setRam(</span><span class="s3">128</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone1.setHarga(</span><span class="s3">5000000</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;nama handphone :&quot;</span><span class="s1">+handphone1.getNama())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;merek handphone :&quot;</span><span class="s1">+handphone1.getMerek())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;ukuran ram handphone :&quot;</span><span class="s1">+handphone1.getRam())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;total harga handphone :&quot;</span><span class="s1">+handphone1.getHarga())</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;</span><span class="s0">\n\t\t</span><span class="s2">Menu 2&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone handphone2=</span><span class="s0">new </span><span class="s1">handphone()</span><span class="s0">;</span>
+        <span class="s1">handphone2.setNama(</span><span class="s2">&quot;Oppo Reno 4 Pro&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone2.setMerek(</span><span class="s2">&quot; Oppo&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone2.setRam(</span><span class="s3">64</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone2.setHarga(</span><span class="s3">2000000</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;nama handphone :&quot;</span><span class="s1">+handphone2.getNama())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;merek handphone :&quot;</span><span class="s1">+handphone2.getMerek())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;ukuran ram handphone :&quot;</span><span class="s1">+handphone2.getRam())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;total harga handphone :&quot;</span><span class="s1">+handphone2.getHarga())</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;</span><span class="s0">\n\t\t</span><span class="s2">menu 3&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone handphone3=</span><span class="s0">new </span><span class="s1">handphone()</span><span class="s0">;</span>
+        <span class="s1">handphone3.setNama(</span><span class="s2">&quot;Asus Rog Phone 3&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone3.setMerek(</span><span class="s2">&quot; Asus&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone3.setRam(</span><span class="s3">256</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">handphone3.setHarga(</span><span class="s3">10000000</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Nama handphone :&quot;</span><span class="s1">+handphone3.getNama())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Merek handphone :&quot;</span><span class="s1">+handphone3.getMerek())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Ukuran RAM handphone :&quot;</span><span class="s1">+handphone3.getRam())</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Total harga handphone :&quot;</span><span class="s1">+handphone3.getHarga())</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
