@@ -1,0 +1,44 @@
+package BelajarOOP;
+
+public class namamakanan {
+    String nama;
+    int harga;
+    public static void main(String[]args){
+        namamakanan makanan1=new namamakanan();
+        System.out.println("selamat datang di menu makanan kami");
+
+        System.out.println("menu 1:");
+        makanan1.nama="capcay";
+        makanan1.harga=10000;
+
+        System.out.println("nama makanan:" +makanan1.nama);
+        System.out.println("harga:" +makanan1.harga);
+
+
+        namamakanan makanan2=new namamakanan();
+        System.out.println("menu 2:");
+        makanan2.nama="nasi goreng";
+        makanan2.harga=5000;
+
+        System.out.println("nama makanan:" +makanan2.nama);
+        System.out.println("harga:" +makanan2.harga);
+
+        namamakanan makanan3=new namamakanan();
+        System.out.println("menu 3:");
+        makanan3.nama="soto ayam";
+        makanan3.harga=15000;
+
+        System.out.println("nama makanan:" +makanan3.nama);
+        System.out.println("harga:" +makanan3.harga);
+
+        namamakanan makanan4=new namamakanan();
+        System.out.println("menu 4:");
+        makanan4.nama="tipat sate";
+        makanan4.harga=40000;
+
+        System.out.println("nama makanan:" +makanan4.nama);
+        System.out.println("harga:" +makanan4.harga);
+    }
+}
+
+
