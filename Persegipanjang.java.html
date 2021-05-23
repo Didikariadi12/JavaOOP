@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Persegipanjang.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Persegipanjang.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.company;
+
+<span class="s0">import </span>java.util.Scanner;
+
+<span class="s0">public class </span>Persegipanjang <span class="s0">extends </span>Bangundatar {
+    <span class="s0">private double </span>l,kll,p;
+
+    Scanner input = <span class="s0">new </span>Scanner(System.in);
+
+    @Override
+    <span class="s0">public double </span>Luas() {
+        System.out.print(<span class="s2">&quot;Panjang : &quot;</span>);
+        p = input.nextInt();
+        System.out.print(<span class="s2">&quot;Lebar : &quot;</span>);
+        l = input.nextInt();
+        <span class="s0">return </span>p*l;
+    }
+}
+</pre>
+</body>
+</html>
